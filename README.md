@@ -1,1 +1,1 @@
-# homepage_my_hobby_2026
+homepage_my_hobby_2026
