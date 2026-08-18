@@ -2,47 +2,33 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <!-- スマホ対応のおまじない -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 検索エンジンに見つからないようにするおまじない -->
   <meta name="robots" content="noindex, nofollow">
-  <title>私の趣味のページ</title>
+  <title>趣味</title>
 
-  <style>
-    /* 全体の基本設定 */
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-    }
-
-    /* メインコンテンツの枠組み（パソコン用） */
-    .content {
-      width: 80%;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-    }
-
-    /* --- ここからスマホ用の設定 --- */
-    @media (max-width: 768px) {
-      .content {
-        width: 95%; /* スマホでは画面いっぱいに広げる */
-        margin: 10px auto;
-        background-color: #e3f2fd; /* スマホのときだけ背景を薄い青にして変化をわかりやすく */
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="content">
-    <h1>趣味の記録</h1>
-    <p>ここは私と、URLを知っている人だけが見られる秘密のページです。</p>
-    <p>ブラウザの横幅を狭くしてみてください。スマホサイズになると背景色が青に変わります。</p>
-  </div>
+  <!-- ここに追加 -->
+  <div id="bubble-container"></div>
 
+  <!-- ここからコンテンツ全体を囲む -->
+  <div class="content-wrapper">
+
+    <h1>趣味</h1>
+
+    <div class="grid-container">
+      <a href="game.html" class="card-button">
+        <span class="card-text">ゲーム</span>
+      </a>
+      <a href="#" class="card-button">
+        <span class="card-text">音楽</span>
+      </a>
+    </div>
+
+  </div> <!-- コンテンツの囲み終わり -->
+
+  <script src="bubble.js"></script>
 </body>
 </html>
